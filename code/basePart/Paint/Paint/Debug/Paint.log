@@ -1,0 +1,4 @@
+﻿  Paint.cpp
+E:\learnc\code\basePart\Paint\Paint\Paint.cpp(21,10): error C2040: “a”:“int *”与“int”的间接寻址级别不同
+E:\learnc\code\basePart\Paint\Paint\Paint.cpp(22,18): error C2440: “初始化”: 无法从“int”转换为“int **”
+E:\learnc\code\basePart\Paint\Paint\Paint.cpp(22,15): message : 从整型强制转换为指针类型要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
