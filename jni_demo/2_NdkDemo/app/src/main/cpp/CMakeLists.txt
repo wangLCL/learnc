@@ -9,6 +9,8 @@ cmake_minimum_required(VERSION 3.22.1)
 
 project("a2_ndkdemo")
 
+#指定输出目录
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/../app/src/main/jniLibs/${ANDROID_ABI})
 # Creates and names a library, sets it as either STATIC
 # or SHARED, and provides the relative paths to its source code.
 # You can define multiple libraries, and CMake builds them for you.
@@ -18,7 +20,8 @@ add_library( # Sets the name of the library.
         a2_ndkdemo
 
         # Sets the library as a shared library.
-        SHARED
+#        SHARED
+        STATIC
 
         # Provides a relative path to your source file(s).
         native-lib.cpp)

@@ -28,10 +28,17 @@ public class MainActivity extends AppCompatActivity {
     private void updateTime(){
         // Example of a call to a native method
         TextView tv = binding.sampleText;
-        tv.setText(stringFromJNI());
+        tv.setText(stringFromJNI()+"xxx"+add(2,5));
+    }
+
+    public void update(int a,int b){
+        TextView tv = binding.sampleText;
+        tv.setText(a+"xxx"+b);
     }
 
     public native String stringFromJNI();
 
     public native void callBackMethod();
+
+    public native int add(int a,int b);
 }
