@@ -3,6 +3,6 @@
 using namespace std;
 
 JNIEXPORT void JNICALL Java_org_example_Main_sayHello
-(JNIEnv*, jobject) {
+(JNIEnv* jnienv, jobject job) {
 	cout << "c++" << endl;
 }
