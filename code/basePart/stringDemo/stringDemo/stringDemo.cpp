@@ -32,4 +32,8 @@ int main()
     //迭代器在说把
 
     //string (int n,char x)  n个x组成的字符串
+
+    int a;
+    a = 19;
+    cout << a << endl;
 }
