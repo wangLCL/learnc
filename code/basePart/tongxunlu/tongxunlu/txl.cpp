@@ -1,4 +1,5 @@
 #include<iostream>
+#include <string>
 using namespace std;
 void showMenu() {
 	cout << "***************************" << endl;
@@ -18,6 +19,19 @@ void showMenu() {
 
 int main() {
 	int select = 0;
+
+	const char* str = "ss";
+	// // 使用字符串数据（注意要释放）
+	int size = sizeof(str);
+	// env->ReleaseStringUTFChars((jstring)obj, str);
+	
+	const char a[3] = "xx";
+	char ch[10];
+	ch[0] = 's';
+	ch[1] = 'x';
+
+	string s;
+	const char *xx = s.c_str();
 
 	while(true){
 		showMenu();
