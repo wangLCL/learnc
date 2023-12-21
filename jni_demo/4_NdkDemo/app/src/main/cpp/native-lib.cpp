@@ -31,12 +31,13 @@ GLint loadShader(GLint type,string gVertexShader){
     if (typeShader != 0){
         const char *myString = gVertexShader.c_str();
         glShaderSource(typeShader, 1,&myString
-                       , NULL)
+                       , NULL);
     }
 }
 void createProgram(string gVertexShader,string gFragmentShader){
     loadShader(GL_VERTEX_SHADER,gVertexShader);
 }
+
 
 bool setupGraphics(int w, int h) {
     printGLString("Version", GL_VERSION);
@@ -44,7 +45,7 @@ bool setupGraphics(int w, int h) {
     printGLString("Renderer", GL_RENDERER);
     printGLString("Extensions", GL_EXTENSIONS);
     LOGI("setupGraphics(%d, %d)", w, h);
-
+    int  gProgram;
     createProgram(gVertexShader, gFragmentShader);
     if (!gProgram) {
         LOGE("Could not create program.");
